@@ -27,5 +27,6 @@
         }
     },
     "suggest": {
+        "elixir/elixir-di": "*"
     }
 }
