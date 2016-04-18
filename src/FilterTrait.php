@@ -7,7 +7,6 @@ use Elixir\Filter\FilterInterface;
 /**
  * @author Cédric Tanghe <ced.tanghe@gmail.com>
  */
-
 trait FilterTrait 
 {
     /**
@@ -33,7 +32,8 @@ trait FilterTrait
     }
     
     /**
-     * @return boolean
+     * @param mixed $data
+     * @return mixed
      */
-    abstract public function filter();
+    abstract public function filter($data = null);
 }
