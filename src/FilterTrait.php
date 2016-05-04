@@ -15,8 +15,7 @@ trait FilterTrait
     protected $filters = []; 
     
     /**
-     * @param FilterInterface $filter
-     * @param array $options
+     * {@inheritdoc}
      */
     public function addFilter(FilterInterface $filter, array $options = [])
     {
@@ -24,16 +23,10 @@ trait FilterTrait
     }
     
     /**
-     * @return array
+     * {@inheritdoc}
      */
     public function getFilters()
     {
         return $this->filters;
     }
-    
-    /**
-     * @param mixed $data
-     * @return mixed
-     */
-    abstract public function filter($data = null);
 }
