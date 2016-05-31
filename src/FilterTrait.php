@@ -1,6 +1,6 @@
 <?php
 
-namespace Elixir\Validator;
+namespace Elixir\Filter;
 
 use Elixir\Filter\FilterInterface;
 
