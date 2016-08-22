@@ -2,18 +2,16 @@
 
 namespace Elixir\Filter;
 
-use Elixir\Filter\FilterInterface;
-
 /**
  * @author Cédric Tanghe <ced.tanghe@gmail.com>
  */
-trait FilterTrait 
+trait FilterTrait
 {
     /**
      * @var array
      */
-    protected $filters = []; 
-    
+    protected $filters = [];
+
     /**
      * {@inheritdoc}
      */
@@ -21,7 +19,7 @@ trait FilterTrait
     {
         $this->filters[] = ['filter' => $filter, 'options' => $options];
     }
-    
+
     /**
      * {@inheritdoc}
      */

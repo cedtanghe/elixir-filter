@@ -9,7 +9,8 @@ interface FilterInterface
 {
     /**
      * @param mixed $value
-     * @param array $options 
+     * @param array $options
+     *
      * @return mixed
      */
     public function filter($value, array $options = []);

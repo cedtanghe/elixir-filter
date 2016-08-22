@@ -13,29 +13,28 @@ class FilterManager
      * @var ContainerInterface
      */
     protected $container;
-    
+
     /**
-     * @var array 
+     * @var array
      */
     protected $aliases = [
-        'callback' => '\Elixir\Filter\CallbackFilter'
+        'callback' => '\Elixir\Filter\CallbackFilter',
     ];
-    
+
     /**
      * @param ContainerInterface $container
-     * @param array $aliases
+     * @param array              $aliases
      */
-    public function __construct(ContainerInterface $container, array $aliases = []) 
+    public function __construct(ContainerInterface $container, array $aliases = [])
     {
         $this->container = $container;
         $this->aliases += $aliases;
-        
-        foreach ($this->aliases as $alias => $original)
-        {
+
+        foreach ($this->aliases as $alias => $original) {
             $this->container->addAlias($original, $alias);
         }
     }
-    
+
     /**
      * @return ContainerInterface
      */
@@ -43,7 +42,7 @@ class FilterManager
     {
         return $this->container;
     }
-    
+
     /**
      * @ignore
      */
