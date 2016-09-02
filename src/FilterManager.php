@@ -18,7 +18,7 @@ class FilterManager
      * @var array
      */
     protected $aliases = [
-        'callback' => '\Elixir\Filter\CallbackFilter',
+        'filter.callback' => '\Elixir\Filter\CallbackFilter',
     ];
 
     /**
