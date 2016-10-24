@@ -5,7 +5,7 @@ namespace Elixir\Filter;
 /**
  * @author Cédric Tanghe <ced.tanghe@gmail.com>
  */
-trait FilterTrait
+trait FilterizableTrait
 {
     /**
      * @var array
