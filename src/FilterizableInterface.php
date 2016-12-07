@@ -12,6 +12,11 @@ interface FilterizableInterface
      * @param array           $options
      */
     public function addFilter(FilterInterface $filter, array $options = []);
+    
+    /**
+     * @param array $filters
+     */
+    public function setFilters(array $filters);
 
     /**
      * @return array

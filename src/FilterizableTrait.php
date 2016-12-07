@@ -19,7 +19,23 @@ trait FilterizableTrait
     {
         $this->filters[] = ['filter' => $filter, 'options' => $options];
     }
-
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function setFilters(array $filters)
+    {
+        $this->filters = [];
+        
+        foreach ($filters as $config) {
+            
+            $filter = isset($config['filter']) ? $config['filter'] : $config;
+            $options = isset($config['options']) ? $config['options'] : [];
+            
+            $this->addFilter($filter, $options);
+        }
+    }
+    
     /**
      * {@inheritdoc}
      */
