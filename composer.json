@@ -106,6 +106,7 @@
         }
     },
     "suggest": {
-        "elixir/elixir-di": "If you use FilterManager"
+        "elixir/elixir-di": "If you use FilterManager",
+        "zendframework/zend-escaper": "If you use EscaperFilter (securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs)"
     }
 }

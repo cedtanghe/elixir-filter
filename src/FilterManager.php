@@ -19,8 +19,9 @@ class FilterManager
      */
     protected $aliases = [
         'filter.callback' => '\Elixir\Filter\CallbackFilter',
+        'filter.escaper' => '\Elixir\Filter\EscaperFilter',
     ];
-
+    
     /**
      * @param ContainerInterface $container
      * @param array              $aliases
